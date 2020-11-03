@@ -1,0 +1,15 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        multiDexEnabled true
+    }
+}
+
+dependencies {
+    lintChecks project(":internal:lint")
+}
